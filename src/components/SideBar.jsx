@@ -28,7 +28,7 @@ const Sidebar = ({onClick}) => {
         {/* Close Button for Mobile */}
 
         {/* Logo */}
-        <h2 className="text-2xl font-bold text-blue-600 p-5">📘 MedRecords</h2>
+        <h2 className="text-2xl font-bold text-blue-600 p-5">📘 Medicare</h2>
 
         {/* Navigation Links */}
         <nav className="flex flex-col space-y-4 p-5">
