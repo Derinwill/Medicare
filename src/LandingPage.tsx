@@ -14,7 +14,7 @@ const LandingPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Welcome to MediRecord!
+        Welcome to Medicare!
       </motion.h1>
 
       {/* Animated Subtext */}
