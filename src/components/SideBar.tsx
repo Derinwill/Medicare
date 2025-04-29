@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaBars, FaTimes, FaClipboardList, FaPlus, FaShareAlt, FaSignOutAlt, FaUser, FaThLarge, FaShieldAlt } from "react-icons/fa";
+import { FaBars, FaTimes, FaClipboardList, FaPlus, FaShareAlt, FaSignOutAlt, FaUser, FaThLarge, FaShieldAlt, FaAddressBook } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useAuth } from "../provider/AuthProvider";
 import { useSelector } from "react-redux";
@@ -79,6 +79,13 @@ const Sidebar = () => {
             userType === UserType.PATIENT  &&
           <Link to="/manage-access" onClick={closeSidebar} className="flex items-center space-x-2 text-gray-600 hover:text-blue-500 p-2">
             <FaShieldAlt /> <span> Manage Access</span>
+          </Link>
+          }
+
+{
+            userType === UserType.PATIENT  &&
+          <Link to="/logs" onClick={closeSidebar} className="flex items-center space-x-2 text-gray-600 hover:text-blue-500 p-2">
+            <FaAddressBook /> <span> Logs</span>
           </Link>
           }
 
