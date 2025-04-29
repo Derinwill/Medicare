@@ -30,7 +30,7 @@ const PatientDashboard = () => {
     <div className="min-h-screen bg-gradient-to-r from-blue-300 to-purple-400 flex flex-col items-center p-6 w-full">
       {/* Header */}
       <header className="w-full max-w-4xl bg-white p-4 rounded-lg shadow-lg flex justify-between items-center">
-        <h1 className="text-xl font-bold text-gray-800">Welcome, {patient?.patient.name}!</h1>
+        <h1 className="text-xl font-bold text-gray-800">Welcome, {patient && patient?.patient ? patient?.patient.name : 'N/A'}!</h1>
         <Button onClick={() => navigate("/profile")} className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Profile</Button>
       </header>
       
