@@ -26,6 +26,7 @@ export enum GenderEnum {
     dob:     string;
     address: null;
     phone:   null;
+    uniqId: string;
 }
 
 export interface Doctor {

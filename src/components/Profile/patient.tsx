@@ -33,9 +33,14 @@ const PatientProfile = () => {
           <h2 className="text-2xl font-bold text-center text-gray-800">Patient Profile</h2>
           
           <div className="mt-4 space-y-4">
+          <div>
+              <label className="block text-gray-700">Patient Uniq ID</label>
+              <span className="text-black">{formData && formData.patient ? formData.patient.uniqId : 'N/A'}</span>
+            </div>
             <div>
               <label className="block text-gray-700">Full Name</label>
               <input 
+              
                 type="text" 
                 name="name" 
                 value={formData.patient?.name} 
