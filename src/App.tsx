@@ -14,6 +14,7 @@ import GrantAccessScreen from "./GrantAccess";
 import PatientRecord from "./PatientRecord";
 import SearchPatientRecords from "./SearchRecords";
 import ManageAccess from "./ManageAccess";
+import PatientAccessLogs from "./PatientLogs";
 
 function App() {
  
@@ -34,6 +35,7 @@ function App() {
                 <Route path="/access" element={<ProtectedRoute><GrantAccessScreen /></ProtectedRoute>} />
                 <Route path="/search-patient" element={<ProtectedRoute><SearchPatientRecords /></ProtectedRoute>} />
                 <Route path="/manage-access" element={<ProtectedRoute><ManageAccess /></ProtectedRoute>} />
+                <Route path="/logs" element={<ProtectedRoute><PatientAccessLogs /></ProtectedRoute>} />
               </Route>
             </Routes>
           </Router>
